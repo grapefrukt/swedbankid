@@ -3,7 +3,7 @@
 
   "name": "BankID fix for Swedbank",
   "description": "This extension makes BankID the default authentication method for Swedbank",
-  "version": "1.0",
+  "version": "1.2",
 
   "icons": { "16": "icon16.png",
            "48": "icon48.png",
@@ -11,7 +11,7 @@
 
   "content_scripts": [
     {
-        "matches": [ "https://internetbank.swedbank.se/*" ],
+        "matches": [ "https://internetbank.swedbank.se/idp/portal/identifieringidp/*" ],
         "js": ["content.js"],
         "run_at" : "document_idle"
     }
